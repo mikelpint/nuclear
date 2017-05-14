@@ -105,14 +105,30 @@ svg:hover path{
 
 }
 
-.buttons{
+.article table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article h1 {
+  font-family: Questrial;
+  color: #FAFAFA;
+  margin-bottom: 72px;
+}
+
+.article tr {
+  text-align: left;
+  line-height: 72px;
+}
+
+.buttons {
+  display: inline-block;
   text-align: center;
   font-family: Questrial;
   color: #FAFAFA;
   font-size: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
-  padding: 16px 24px;
+  margin: 24px;
+  width: 300px;
   border: 1px #FAFAFA solid;
   border-radius: 8px;
 }
