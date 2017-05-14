@@ -92,7 +92,49 @@ svg:hover path{
   display: table;
 }
 
-.downloads{
+.ganoo {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  font-family: Questrial;
+  color: #FAFAFA;
+}
+
+.ganoo>.container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 72px;
+  width: 100%;
+  display: table;
+}
+
+.featured {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-family: Questrial;
+  color: #FAFAFA;
+}
+
+.featured>.container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.featured h1 {
+  margin-bottom: 36px;
+}
+
+.featured a {
+  color: #FAFAFA;
+}
+
+.downloads {
   padding-top: 60px;
   margin-bottom: 0;
   text-align: center;
