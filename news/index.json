@@ -1,5 +1,6 @@
 {
     "articles": [
-	"19-01-2017-news-module.json"
+      "19-01-2017-news-module.json",
+      "30-01-2017-genres.json"
     ]
 }
