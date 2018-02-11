@@ -297,7 +297,7 @@ svg:hover path{
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.subscribe-text {
+.sub-text {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -305,7 +305,7 @@ svg:hover path{
   padding: 1rem 8rem 1rem 0;
 }
 
-.subscribe-text>h2 {
+.sub-text>h2 {
   margin: 0 0 0.5rem 0;
 }
 
@@ -318,7 +318,7 @@ svg:hover path{
     flex-flow: column;
   }
 
-  .subscribe-text {
+  .sub-text {
     padding: 0;
   }
 
