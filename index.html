@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>nuclear music player</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="Questrial/font.css">
   <link rel="stylesheet" type="text/css" href="Timeburner/font.css">
@@ -12,188 +11,162 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+  <nav class="navbar">
 
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#intro">
-          <img src="logo.png" height="100%">
-          nuclear
-        </a>
-      </div>
+    <a class="navbar-brand" href="#intro">
+      <img src="logo.png" height="100%">
+      nuclear
+    </a>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a class="navbar-github-link" href="https://github.com/nukeop/nuclear/">
-            <svg class="navbar-github" viewBox="0 0 36 36" version="1.1" aria-hidden="true">
-              <path fill-rule="evenodd" clip-rule="evenodd" fill="#9d9d9d" d="M18 1.4C9 1.4 1.7 8.7 1.7 17.7c0 7.2 4.7 13.3 11.1 15.5.8.1 1.1-.4 1.1-.8v-2.8c-4.5 1-5.5-2.2-5.5-2.2-.7-1.9-1.8-2.4-1.8-2.4-1.5-1 .1-1 .1-1 1.6.1 2.5 1.7 2.5 1.7 1.5 2.5 3.8 1.8 4.7 1.4.1-1.1.6-1.8 1-2.2-3.6-.4-7.4-1.8-7.4-8.1 0-1.8.6-3.2 1.7-4.4-.2-.4-.7-2.1.2-4.3 0 0 1.4-.4 4.5 1.7 1.3-.4 2.7-.5 4.1-.5 1.4 0 2.8.2 4.1.5 3.1-2.1 4.5-1.7 4.5-1.7.9 2.2.3 3.9.2 4.3 1 1.1 1.7 2.6 1.7 4.4 0 6.3-3.8 7.6-7.4 8 .6.5 1.1 1.5 1.1 3v4.5c0 .4.3.9 1.1.8 6.5-2.2 11.1-8.3 11.1-15.5C34.3 8.7 27 1.4 18 1.4z"></path>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <div class="spacer"></div>
+    
+    <a class="navbar-github-link" href="https://github.com/nukeop/nuclear/">
+      <svg class="navbar-github" viewBox="0 0 36 36" version="1.1" aria-hidden="true">
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#9d9d9d" d="M18 1.4C9 1.4 1.7 8.7 1.7 17.7c0 7.2 4.7 13.3 11.1 15.5.8.1 1.1-.4 1.1-.8v-2.8c-4.5 1-5.5-2.2-5.5-2.2-.7-1.9-1.8-2.4-1.8-2.4-1.5-1 .1-1 .1-1 1.6.1 2.5 1.7 2.5 1.7 1.5 2.5 3.8 1.8 4.7 1.4.1-1.1.6-1.8 1-2.2-3.6-.4-7.4-1.8-7.4-8.1 0-1.8.6-3.2 1.7-4.4-.2-.4-.7-2.1.2-4.3 0 0 1.4-.4 4.5 1.7 1.3-.4 2.7-.5 4.1-.5 1.4 0 2.8.2 4.1.5 3.1-2.1 4.5-1.7 4.5-1.7.9 2.2.3 3.9.2 4.3 1 1.1 1.7 2.6 1.7 4.4 0 6.3-3.8 7.6-7.4 8 .6.5 1.1 1.5 1.1 3v4.5c0 .4.3.9 1.1.8 6.5-2.2 11.1-8.3 11.1-15.5C34.3 8.7 27 1.4 18 1.4z"></path>
+      </svg>
+    </a>
   </nav>
 
   <div id="intro" class="jumbotron intro">
     <div class="container">
-      <div style="margin-top: 24px;"><img src="logo_full_light.png" /></div>
+      <div style="margin-top: 24px;"><img class="logo" src="logo_full_light.png" /></div>
       <h2 style="margin-top: 48px;">
-        A free, multiplatform music player app that streams from multiple sources
+	A free, multiplatform music player app that streams from multiple sources
       </h2>
-      <img src="screenshot.png" height=600px />
+      <img class="screenshot" src="screenshot.png" />
     </div>
   </div>
+  
+  <div id="subscribe" class="jumbotron subscribe">
+    <div class="container">
+      <div class="subscribe-text">
+	<h2>Coming soon.</h2>
+	Subscribe to get notified.
+      </div>
+      
+      <div id="mc_embed_signup">
+	<form action="http://tech.us15.list-manage.com/subscribe/post?u=9d6b789c87d2e7d4ba8fc55dc&amp;id=ebca2aa438" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	  <div id="mc_embed_signup_scroll">
+	    <div class="mc-field-group">
+	      <label for="mce-EMAIL">Email Address </label>
+	      <input type="email" placeholder="Your e-mail" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+	    </div>
+	    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	    <div id="mce-responses" class="clear">
+	      <div class="response" id="mce-error-response" style="display:none"></div>
+	      <div class="response" id="mce-success-response" style="display:none"></div>
+	    </div>
+	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9d6b789c87d2e7d4ba8fc55dc_ebca2aa438" tabindex="-1" value=""></div>
+	  </div>
+	</form>
+      </div>
 
+    </div>
+  </div>
+  
   <div id="lastfm" class="jumbotron lastfm">
     <div class="container">
-      <div class="container" style="display: table; width: 62%;">
-        <div style="display: table-cell;"><img src="logos/lastfm.png" /></div>
-        <div style="display: table-cell; text-align: right;">
-          <h2>Last.fm scrobbling</h2>
-          <p>Nuclear can automatically scrobble to last.fm.</p>
-        </div>
+      <div><img src="logos/lastfm.png" /></div>
+      <div>
+	<h2>Last.fm scrobbling</h2>
+	<p>Nuclear can automatically scrobble to last.fm.</p>
       </div>
     </div>
   </div>
-
+  
   <div id="ganoo" class="jumbotron ganoo">
     <div class="container">
-      <div class="container" style="display: table; width: 62%;">
-        <div style="display: table-cell;"><img src="logos/ganoo.png" /></div>
-        <div style="display: table-cell; text-align: right;">
-          <h2>Free as in freedom</h2>
-          <p>Nuclear is developed on Github under GPLv3, with the "GNU/Linux first" mindset. <br />
-            This means it respects your freedom, and we're giving you full access to source code, <br />
-            so you can modify it and contribute to the project.
-          </p>
-        </div>
+      <div><img src="logos/ganoo.png" /></div>
+      <div>
+	<h2>Free as in freedom</h2>
+	<p>Nuclear is developed on Github under GPLv3, with the "GNU/Linux first" mindset. <br />
+	  This means it respects your freedom, and we're giving you full access to source code, <br />
+	  so you can modify it and contribute to the project.
+	</p>
       </div>
     </div>
   </div>
-
+  
   <div id="featured" class="jumbotron featured">
     <div class="container">
       <h1>
-        Featured on:
+	Featured on:
       </h1>
       <h2>
-        <a href="http://www.omgubuntu.co.uk/2017/02/nuclear-music-player-desktop-youtube">OMG! Ubuntu</a>
-        -
-        <a href="https://www.fossmint.com/nuclear-music-streaming-player-for-linux/">FOSSMint</a>
-        -
-        <a href="https://korben.info/nuclear-player-musical-multi-source.html">korben.info</a>
-        -
-        <a href="http://www.softpedia.com/get/Multimedia/Audio/Audio-Players/nuclear.shtml">Softpedia</a>
-        -
-        <a href="https://itsfoss.com/nuclear-music-player-linux/">It's FOSS</a>
+	<a href="http://www.omgubuntu.co.uk/2017/02/nuclear-music-player-desktop-youtube">OMG! Ubuntu</a>
+	-
+	<a href="https://www.fossmint.com/nuclear-music-streaming-player-for-linux/">FOSSMint</a>
+	-
+	<a href="https://korben.info/nuclear-player-musical-multi-source.html">korben.info</a>
+	-
+	<a href="http://www.softpedia.com/get/Multimedia/Audio/Audio-Players/nuclear.shtml">Softpedia</a>
+	-
+	<a href="https://itsfoss.com/nuclear-music-player-linux/">It's FOSS</a>
       </h2>
     </div>
   </div>
-
+  
   <div id="downloads" class="jumbotron downloads">
-    <div class="article">
       <h1>
-        Download now
+	Download now
       </h1>
-      <table>
-        <tr>
-          <td>
-            <span class="buttons">
-              <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0-x86_64.AppImage">Linux AppImage
-              </a>
-            </span>
-          </td>
-          <td>
-            <span class="buttons">
-              <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear.Setup.0.4.0.exe">Windows .exe
-              </a>
-            </span>
-          </td>
-          <td>
-            <span class="buttons">
-              <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0-mac.zip">Mac .zip
-	      </a>
-	    </span>
-	  </td>
-        </tr>
-        <tr>
-          <td>
-            <span class="buttons">
-              <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear_0.4.0_amd64.deb">Linux .deb package
-              </a>
-            </span>
-          </td>
-          <td>
-            <span class="buttons">
-              <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear.0.4.0.exe">Windows portable
-              </a>
-            </span>
-          </td>
-	  <td>
-            <span class="buttons">
-              <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0.dmg">Mac .dmg
-	      </a>
-	    </span>
-	  </td>
-        </tr>
-        <tr>
-          <td>
-            <span class="buttons">
-              <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0.tar.gz">Linux tarball
-              </a>
-            </span>
-          </td>
-          <td></td>
-	  <td>
-            <span class="buttons">
-              <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0.pkg">Mac .pkg
-	      </a>
-	    </span>
-	  </td>
-        </tr>
-      </table>
-    </div>
+
+      <div class="downloads-container">
+        <div class="downloads-row">
+          <div class="downloads-item">
+	    <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0-x86_64.AppImage">Linux AppImage
+	    </a>
+	  </div>
+          <div class="downloads-item">
+	    <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear.Setup.0.4.0.exe">Windows .exe
+	    </a>
+	  </div>
+          <div class="downloads-item">
+	    <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0-mac.zip">Mac .zip
+	    </a>
+	  </div>
+	</div>
+
+        <div class="downloads-row">
+          <div class="downloads-item">
+	    <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear_0.4.0_amd64.deb">Linux .deb package
+	    </a>
+	  </div>
+          <div class="downloads-item">
+	    <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear.0.4.0.exe">Windows portable
+	    </a>
+	  </div>
+          <div class="downloads-item">
+	    <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0.dmg">Mac .dmg
+	    </a>
+	  </div>
+	</div>
+
+        <div class="downloads-row">
+	  <div class="downloads-item">
+	    <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0.tar.gz">Linux tarball
+	    </a>
+	  </div>
+	  <div class="downloads-item">
+	    
+	  </div>
+	  <div class="downloads-item">
+	    <a href="https://github.com/nukeop/nuclear/releases/download/v0.4.0/nuclear-0.4.0.pkg">Mac .pkg
+	    </a>
+	  </div>
+	</div>
+	
+      </div>
   </div>
 
   <div id="questions" class="jumbotron questions">
     <div class="container">
       <h1>
-        Got a question for nuclear?
+	Got a question for nuclear?
       </h1>
       <a href="https://twitter.com/nuclear_player">
-        Ask us on Twitter
+	Ask us on Twitter
       </a>
-    </div>
-  </div>
-
-  <div id="subscribe" class="jumbotron subscribe">
-    <div class="container">
-      <div class="container" style="display: table; width: 62%;">
-        <div style="text-align: left;">
-          <h2>Coming soon.</h2>
-          Subscribe to get notified.
-        </div>
-        <div style="display: table-cell; vertical-align: middle;">
-
-          <div id="mc_embed_signup">
-            <form action="http://tech.us15.list-manage.com/subscribe/post?u=9d6b789c87d2e7d4ba8fc55dc&amp;id=ebca2aa438" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <div class="mc-field-group">
-                  <label for="mce-EMAIL">Email Address </label>
-                  <input type="email" placeholder="Your e-mail" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                </div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none"></div>
-                  <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9d6b789c87d2e7d4ba8fc55dc_ebca2aa438" tabindex="-1" value=""></div>
-              </div>
-            </form>
-          </div>
-
-        </div>
-      </div>
     </div>
   </div>
 

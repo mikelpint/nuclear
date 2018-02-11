@@ -1,40 +1,61 @@
 html {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
+  position: relative;
   width: 100%;
   height: 100%;
-  margin: 0px;
+  margin: 4rem 0 0 0;
+}
+
+h1,h2,h3,h4 {
+  font-weight: normal;
 }
 
 .navbar {
+  position: fixed;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 4rem;
   margin-bottom: 0px;
+  background: #212121;
+}
+
+.spacer {
+  flex: 1 1 auto;
 }
 
 .navbar-brand {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
   position: relative;
   padding: 10px 10px;
   height: 50px;
   font-family: Timeburner;
   font-size: 24px;
   z-index: 100;
+  color: #FFF;
+  text-decoration: none;
 }
 
 .navbar-brand img {
+  height: 2rem;
   display: inline-block;
-  margin-right: 4px;
+  margin-right: 0.5rem;
 }
 
 .navbar-github {
   height: 40px;
-  margin-top: 4px;
 }
 
 .navbar-github-link {
-  display: initial !important;
-  padding: 0;
+  padding: 0.5rem;
 }
 
 svg:hover path{
@@ -42,21 +63,39 @@ svg:hover path{
 }
 
 .jumbotron {
+  display: flex;
+  flex-flow: column;
   background: url("bg.jpg") no-repeat fixed center;
   background-size: cover;
 }
 
+.container {
+  box-sizing: border-box;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.jumbotron .container {
+  padding: 0 1rem;
+}
+
 .intro {
   margin-bottom: 0px;
+  padding-top: 1rem;
   padding-bottom: 0px;
   text-align: center;
   font-family: Questrial;
   color: #FAFAFA;
 }
 
-.intro>.container {
-  margin-bottom: 0px;
-  width: 100%;
+.logo {
+  width: 40%;
+  max-width: 350px;
+}
+
+.screenshot {
+  width: 80%;
+  max-width: 1350px;
 }
 
 .sources {
@@ -76,37 +115,45 @@ svg:hover path{
 }
 
 .lastfm {
-  margin: 0px;
-  padding: 0px;
-  text-align: left;
   font-family: Questrial;
   color: #FAFAFA;
 }
 
-.lastfm>.container {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 72px;
+.lastfm .container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
   width: 100%;
-  display: table;
+}
+
+@media screen and (max-width: 768px) {
+  .lastfm .container {
+    flex-flow: column;
+  }
 }
 
 .ganoo {
-  margin: 0px;
-  padding: 0px;
-  text-align: left;
   font-family: Questrial;
   color: #FAFAFA;
 }
 
-.ganoo>.container {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 72px;
+.ganoo .container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
   width: 100%;
-  display: table;
+}
+
+@media screen and (max-width: 768px) {
+  .ganoo .container {
+    flex-flow: column;
+  }
 }
 
 .featured {
@@ -117,7 +164,7 @@ svg:hover path{
   color: #FAFAFA;
 }
 
-.featured>.container {
+.featured .container {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 36px;
@@ -132,6 +179,7 @@ svg:hover path{
 
 .featured a {
   color: #FAFAFA;
+  text-decoration: none;
 }
 
 .downloads {
@@ -140,43 +188,70 @@ svg:hover path{
   text-align: center;
   padding-left: 150px;
   padding-right: 150px;
-
+  padding: 5rem 10rem;
 }
 
-.article{
-
-}
-
-.article table {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.article h1 {
-  font-family: Questrial;
+.downloads h1 {
   color: #FAFAFA;
-  margin-bottom: 72px;
 }
 
-.article tr {
-  text-align: left;
-  line-height: 72px;
+.downloads-container {
+  display: flex;
+  flex-flow: column;
 }
 
-.buttons {
-  display: inline-block;
-  text-align: center;
-  font-family: Questrial;
+.downloads-row {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 1rem;
+}
+
+.downloads-item {
+  width: 33%;
+}
+
+.downloads-item a {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   color: #FAFAFA;
-  font-size: 24px;
-  margin: 24px;
-  width: 300px;
-  border: 1px #FAFAFA solid;
-  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 90%;
+  border: 1px solid #FAFAFA;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
 }
 
-.buttons a {
-  color: #FAFAFA;
+@media screen and (max-width: 768px) {
+  .downloads {
+    padding: 0;
+  }
+  
+  .downloads-container {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .downloads-row {
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .downloads-item {
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .downloads-item a {
+    margin: 0 1rem;
+  }
 }
 
 .questions {
@@ -186,11 +261,12 @@ svg:hover path{
   color: #FAFAFA;
 }
 
-.questions>.container {
+.questions .container {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 96px;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .questions h1 {
@@ -204,23 +280,52 @@ svg:hover path{
   font-size: 24px;
   border: 1px #FAFAFA solid;
   border-radius: 8px;
+  text-decoration: none;
 }
 
-.subscribe {
-  margin: 0px;
-  padding: 0px;
+.subscribe .container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
   text-align: left;
   font-family: Questrial;
   color: #FAFAFA;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.subscribe>.container {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 36px;
-  padding-bottom: 36px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+.subscribe-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 8rem 1rem 0;
+}
+
+.subscribe-text>h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+#mc_embed_signup {
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe .container {
+    flex-flow: column;
+  }
+
+  .subscribe-text {
+    padding: 0;
+  }
+
+  #mc_embed_signup {
+    margin-top: 2rem;
+    width: 60%;
+  }
 }
 
 .clear {
@@ -279,3 +384,5 @@ svg:hover path{
 .footer a {
   color: #FAFAFA;
 }
+
+
